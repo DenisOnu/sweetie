@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=
+        "https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                // Username: "sender@email_address.com",
+                // Password: "Enter your password",
+                To: 'denisuchenna@gmail.com',
+                From: "sender@email_address.com",
+                Subject: "Sending Email using javascript",
+                Body: "Well that was easy!!",
+            })
+                .then(function (message) {
+                    alert("mail sent successfully")
+                });
+        }
+    </script>
+</head>
+<body>
+    <form method="post">
+        <input type="button" value="Send Email" 
+            onclick="sendEmail()" />
+      </form>
+
+      <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+</body>
+</html>

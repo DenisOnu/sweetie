@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;600&amp;display=swap" media="all">
+
+    <link rel="stylesheet" href="css/style.css" media="all" type="text/css">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="main">
+		<div class="header">
+			<div class="mhead">
+				<img src="img/a.png" id="fflower" class="img-fluid fflower" style="height: 4em;" alt="">
+				<h1 class="heading" style="text-align: center;">XO MAGIC</h1>
+			</div>
+			<!-- nav -->
+				<div class="nav_w3ls pt-4 pb-3 text-center top-header">
+					<nav>
+						<label for="drop" class="toggle">Menu</label>
+						<input type="checkbox" id="drop" />
+						<ul class="menu">
+							<li><a href="welcome.html" class="active">Home</a></li>
+							<li><a href="Our_Story.html">Our Story</a></li>
+							<li><a href="schedule.html">Schedule</a></li>
+							<li><a href="wedding_party.html">Wedding Party!!</a></li>
+							<li><a href="gift_registry.html">Gift Registry</a></li>
+							<li><a href="moments.html">Moments</a></li>
+							<li><a href="Q_A.html">Q & A</a></li>
+						</ul>
+					</nav>
+				</div>
+		</div>
+
+        <div class="container" style="margin-bottom: 5%; padding-top: 2%; font-weight: bolder;">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="img/LAD_5191.jpg" style="height: auto; width: 100%;" alt="">
+                </div>
+                <div class="col-sm-6 gmsg">
+                    <p>Your presence and well wishes serve as a most precious gift to us.
+                        We would at the same time greatly appreciate other gift items and have put together our wish list which you can select from.
+                        Thank you so much for all you have done. We are immensely grateful.
+                    </p>
+                    <p>
+                        To view the list of items, and select whatever you could provide with our biggest thanks. Please click the link below and fill the quick form.
+                    </p>
+                    <div class="modal fade" id="giftModal" aria-hidden="true" aria-labelledby="giftModalLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="giftModalLabel">Modal 1</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form action="sending_mail.php" method="post">
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+                                    <label for="name">Name</label>
+                                </div>
+                                  
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                                    <label for="email">Email or Phone Number</label>
+                                </div>
+                                <input type="hidden" name="subject" id="subject" value="Wedding Gift">
+                                <div class="form-floating">
+                                    <select class="form-select" id="gift" name="gift">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                    </select>
+                                    <label for="gift" class="form-label">Select an item from the list:</label>
+                                  </div>
+                                <div class="form-floating" style="margin-top: 3%;">
+                                    <textarea class="form-control" id="comment" name="msg" placeholder="Comment goes here"></textarea>
+                                    <label for="comment">Comments</label>
+                                </div>
+                                <div class="form-group" style="margin-top: 3%;">
+                                    <div>
+                                        <button type="submit" class="btn btn-dark" data-bs-dismiss="modal" name="send_mail">Login</button>
+            
+                                    </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="btn btn-dark btn-lg gmodal" data-bs-toggle="modal" href="#giftModal" role="button">Please Select</a>
+                    <p>We would also appreciate all cash gifts. Please click below to view the account details.</p>
+                   
+                    <button class="btn btn-dark cmodal" type="button" data-bs-toggle="modal" data-bs-target="#account">Click for Account Details</button>
+                  
+                    <div class="modal fade" id="account">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                    
+                          <div class="modal-header">
+                            <h4 class="modal-title">Account Details</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                          </div>
+                    
+                          <div class="modal-body">
+                            <p>Account name: Chidinma Onu</p>
+                            <p>Account number: 3423434334</p>
+                            <p>Bank name: First bank of Nigeria</p>
+                          </div>
+                    
+                        </div>
+                      </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+		<div class="footer" style="margin-top: 10%">
+			<p class="fsign"><span>XO Magic</span></h2>
+			<p class="fdate">05.21.2022</p>
+			<span class="freg"><a href="registry.html">Gift Registry</a></span>
+			<span class="created">Created by Denis</span>
+		</div>
+
+    </div>
+
+<script src="js/jquery.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/custom.js"></script>
+
+</body>
+</html>
