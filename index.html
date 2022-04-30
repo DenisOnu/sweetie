@@ -14,6 +14,16 @@
 
 </head>
 <body>
+	<div class="spinner-wrapper">
+		<div class="spinner">
+			<div class="rect1"></div>
+			<div class="rect2"></div>
+			<div class="rect3"></div>
+			<div class="rect4"></div>
+			<div class="rect5"></div>
+		</div>
+	</div>
+	
     <div class="main">
 		<div class="header">
 			<div class="mhead">
@@ -27,7 +37,7 @@
 						<label for="drop" class="toggle">Menu</label>
 						<input type="checkbox" id="drop" />
 						<ul class="menu">
-							<li><a href="welcome.html" class="active">Home</a></li>
+							<li><a href="index.html" class="active">Home</a></li>
 							<li><a href="Our_Story.html">Our Story</a></li>
 							<li><a href="schedule.html">Schedule</a></li>
 							<li><a href="wedding_party.html">Wedding Party!!</a></li>
@@ -72,7 +82,7 @@
 					Welcome to the very special beginning of our magical life as husband and wife.
 				</div>
 				<div class="where">
-					THE HAVEN EVENT CENTRE, GRA IKEJA, LAGOS
+					THE WATERSIDE VENUE CUBE, 5, LEKKI PHASE 1, LAGOS
 				</div>
 				<div class="when">
 					<span>SATURDAY, MAY 21, 2022</span> 
@@ -92,21 +102,30 @@
 
 
     </div>
+	
+		
 <!-- ALL JS FILES -->
 <script src="js/jquery.min.js"></script>
-<!-- <script src="js/popper.min.js"></script> -->
+<script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/countdown.js"></script>
+<script src="js/smoothscroll.js"></script>
+
 <!-- ALL PLUGINS -->
-<!-- <script src="js/jquery.magnific-popup.min.js"></script> -->
+<script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/jquery.pogo-slider.min.js"></script>
 <script src="js/slider-index.js"></script>
-<!-- <script src="js/smoothscroll.js"></script> -->
-<!-- <script src="js/form-validator.min.js"></script>
-<script src="js/contact-form-script.js"></script> -->
-<!-- <script src="js/isotope.min.js"></script> -->
 <script src="js/images-loded.min.js"></script>
 <script src="js/custom.js"></script>
+<script>
+	
+
+	$(window).on('load', function() { 
+	$('.preloader').fadeOut(); 
+	$('.spinner-wrapper').delay(1550).fadeOut('slow'); 
+	$('body').delay(450).css({'overflow':'visible'});
+});
+	</script>
 <script>
 	 // Set the date we're counting down to
 	 var countDownDate = new Date("May 21, 2022 13:00:00").getTime();
@@ -128,7 +147,7 @@
 		
 	// Output the result in an element with id="demo"
 	document.getElementById("timer").innerHTML = days + " Days " + hours + " Hours "
-	+ minutes + " Minutes " + seconds + " Seconds ";
+	+ minutes + " Mins " + seconds + " Secs ";
 		
 	// If the count down is over, write some text 
 	if (distance < 0) {

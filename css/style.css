@@ -3,6 +3,72 @@
 body {
     font-family: "Cormorant";
 }
+
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 999999;
+}
+.spinner {
+    /* margin: 100px auto; */
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+  }
+  
+  .spinner > div {
+    background-color: #333;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+  
+  .spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  
+  .spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  .spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  .spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+  
+  @-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+  }
+  
+  @keyframes sk-stretchdelay {
+    0%, 40%, 100% { 
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }  20% { 
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+  }
+
 @media(min-width:768px){
     body {
         background-image: url(https://images.unsplash.com/photo-1532713031318-db2d14e4b3e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80);
@@ -271,9 +337,13 @@ li>a:only-child:after {
     font-size: 0.7em;
 }
 
+.map {
+    margin-top: 2%;
+}
 @media(min-width:520px) {
     .map {
         margin-left: 20%;
+        
     }
 
     
@@ -315,15 +385,26 @@ li>a:only-child:after {
     padding-top: 2%;
 }
 
-.topimg {
-    height: 100vh;
-    width: auto;
-    /* height: 100vh;
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover; */
+@media(max-width:480px){
+    .topimg {
+        height: 70vh;
+        width: auto;
+    }
 }
+@media(max-width:768px){
+    .topimg{
+        height: 80vh;
+        width: auto;
+    }
+    
+}
+@media(min-width:769px){
+    .topimg {
+        height: 100vh;
+        width: auto;
+    }
+}
+
 /* footer */
 .footer {
     text-align: center;
