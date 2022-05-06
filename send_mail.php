@@ -5,7 +5,7 @@ if (isset($_POST['sending_email_btn'])) {
   $subject = $_POST['subject'];
   $gift = $_POST['gift'];
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
 
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
