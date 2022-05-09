@@ -1,11 +1,11 @@
 <?php 
-if (isset($_POST['sending_email_btn'])) {
+if (isset($_POST['send_mail'])) {
   $name = $_POST['name'];
   $email = $_POST['email'];
   $subject = $_POST['subject'];
   $gift = $_POST['gift'];
   $emailSendMessage = $_POST['msg'];
-  $to = "christianaconu@gmail.com";
+  $to = "denisonu7@gmail.com";
 
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
