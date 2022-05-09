@@ -537,3 +537,9 @@ li>a:only-child:after {
     opacity: 1;
     background: rgba(0, 0, 0, 0.7);
   }
+
+
+  .card-img-top {
+      height: 200px;
+  }
+  
