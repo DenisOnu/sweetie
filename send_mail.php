@@ -5,7 +5,7 @@ if (isset($_POST['send_fridge'])) {
   $subject = $_POST['subject'];
   $gift = "Samsung Double Door Fridge";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -20,12 +20,11 @@ if (isset($_POST['send_fridge'])) {
   </body>
   </html>";
   if (mail($to, $subject, $message, $headers)) {
-   echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
-   exit();
+   header("Location: gift_registry.php?success=1");
+    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
    exit();
   }
 }
@@ -34,9 +33,9 @@ if (isset($_POST['send_oven'])) {
   $name = $_POST['name'];
   $email = $_POST['email'];
   $subject = $_POST['subject'];
-  $gift = "Oven 600/600 - Le Creuset Round Dutch";
+  $gift = "Le Creuset Round Dutch";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -51,12 +50,12 @@ if (isset($_POST['send_oven'])) {
   </body>
   </html>";
   if (mail($to, $subject, $message, $headers)) {
-   echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php?success=1");
+
    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
    exit();
   }
 }
@@ -67,7 +66,7 @@ if (isset($_POST['send_ac'])) {
   $subject = $_POST['subject'];
   $gift = "Air Conditioners";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -83,11 +82,11 @@ if (isset($_POST['send_ac'])) {
   </html>";
   if (mail($to, $subject, $message, $headers)) {
    echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php?success=1");
    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
    exit();
   }
 }
@@ -98,7 +97,7 @@ if (isset($_POST['send_art'])) {
   $subject = $_POST['subject'];
   $gift = "Artworks";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -114,11 +113,11 @@ if (isset($_POST['send_art'])) {
   </html>";
   if (mail($to, $subject, $message, $headers)) {
    echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php?success=1");
    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
    exit();
   }
 }
@@ -129,7 +128,7 @@ if (isset($_POST['send_tv'])) {
   $subject = $_POST['subject'];
   $gift = "Smart TV";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -145,11 +144,11 @@ if (isset($_POST['send_tv'])) {
   </html>";
   if (mail($to, $subject, $message, $headers)) {
    echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php?success=1");
    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
    exit();
   }
 }
@@ -160,7 +159,7 @@ if (isset($_POST['send_micro'])) {
   $subject = $_POST['subject'];
   $gift = "Microwave";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -176,11 +175,11 @@ if (isset($_POST['send_micro'])) {
   </html>";
   if (mail($to, $subject, $message, $headers)) {
    echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php?success=1");
    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
    exit();
   }
 }
@@ -191,7 +190,7 @@ if (isset($_POST['send_sound'])) {
   $subject = $_POST['subject'];
   $gift = "Wireless Sound System";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -207,11 +206,11 @@ if (isset($_POST['send_sound'])) {
   </html>";
   if (mail($to, $subject, $message, $headers)) {
    echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php?success=1");
    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
    exit();
   }
 }
@@ -222,7 +221,7 @@ if (isset($_POST['send_bag'])) {
   $subject = $_POST['subject'];
   $gift = "His&Hers Bags";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -238,11 +237,11 @@ if (isset($_POST['send_bag'])) {
   </html>";
   if (mail($to, $subject, $message, $headers)) {
    echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php?success=1");
    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
    exit();
   }
 }
@@ -253,7 +252,7 @@ if (isset($_POST['send_dish'])) {
   $subject = $_POST['subject'];
   $gift = "Dishwasher";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -269,11 +268,11 @@ if (isset($_POST['send_dish'])) {
   </html>";
   if (mail($to, $subject, $message, $headers)) {
    echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php?success=1");
    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
    exit();
   }
 }
@@ -284,7 +283,7 @@ if (isset($_POST['send_blend'])) {
   $subject = $_POST['subject'];
   $gift = "Kitchen aid blender";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -300,11 +299,11 @@ if (isset($_POST['send_blend'])) {
   </html>";
   if (mail($to, $subject, $message, $headers)) {
    echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php?success=1");
    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
    exit();
   }
 }
@@ -315,7 +314,7 @@ if (isset($_POST['send_fan'])) {
   $subject = $_POST['subject'];
   $gift = "Rechargeable fans";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -331,11 +330,11 @@ if (isset($_POST['send_fan'])) {
   </html>";
   if (mail($to, $subject, $message, $headers)) {
    echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php?success=1");
    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
    exit();
   }
 }
@@ -346,7 +345,7 @@ if (isset($_POST['send_cook'])) {
   $subject = $_POST['subject'];
   $gift = "Caraway Cookware Set/Titanium";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -362,11 +361,11 @@ if (isset($_POST['send_cook'])) {
   </html>";
   if (mail($to, $subject, $message, $headers)) {
    echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php?success=1");
    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
    exit();
   }
 }
@@ -377,7 +376,7 @@ if (isset($_POST['send_voucher'])) {
   $subject = $_POST['subject'];
   $gift = "Gift vouchers";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -393,22 +392,22 @@ if (isset($_POST['send_voucher'])) {
   </html>";
   if (mail($to, $subject, $message, $headers)) {
    echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php?success=1");
    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
    exit();
   }
 }
 
-if (isset($_POST['send_mill'])) {
+if (isset($_POST['send_ninja'])) {
   $name = $_POST['name'];
   $email = $_POST['email'];
   $subject = $_POST['subject'];
-  $gift = "Threadmill";
+  $gift = "Ninja Professional Chopper";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -424,11 +423,11 @@ if (isset($_POST['send_mill'])) {
   </html>";
   if (mail($to, $subject, $message, $headers)) {
    echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php?success=1");
    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
    exit();
   }
 }
@@ -439,7 +438,7 @@ if (isset($_POST['send_bike'])) {
   $subject = $_POST['subject'];
   $gift = "Peloton Bike";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -455,11 +454,11 @@ if (isset($_POST['send_bike'])) {
   </html>";
   if (mail($to, $subject, $message, $headers)) {
    echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php?success=1");
    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
    exit();
   }
 }
@@ -470,7 +469,7 @@ if (isset($_POST['send_mixer'])) {
   $subject = $_POST['subject'];
   $gift = "Stand mixer";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -486,11 +485,11 @@ if (isset($_POST['send_mixer'])) {
   </html>";
   if (mail($to, $subject, $message, $headers)) {
    echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php?success=1");
    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
    exit();
   }
 }
@@ -501,7 +500,7 @@ if (isset($_POST['send_food'])) {
   $subject = $_POST['subject'];
   $gift = "Food Processor";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -517,11 +516,11 @@ if (isset($_POST['send_food'])) {
   </html>";
   if (mail($to, $subject, $message, $headers)) {
    echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php?success=1");
    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
    exit();
   }
 }
@@ -532,7 +531,7 @@ if (isset($_POST['send_juicer'])) {
   $subject = $_POST['subject'];
   $gift = "Ninja Electric Juicer";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -548,11 +547,11 @@ if (isset($_POST['send_juicer'])) {
   </html>";
   if (mail($to, $subject, $message, $headers)) {
    echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php?success=1");
    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
    exit();
   }
 }
@@ -563,7 +562,7 @@ if (isset($_POST['send_toaster'])) {
   $subject = $_POST['subject'];
   $gift = "Kenwood Toaster";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -579,11 +578,11 @@ if (isset($_POST['send_toaster'])) {
   </html>";
   if (mail($to, $subject, $message, $headers)) {
    echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php?success=1");
    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
    exit();
   }
 }
@@ -594,7 +593,7 @@ if (isset($_POST['send_box'])) {
   $subject = $_POST['subject'];
   $gift = "Travel Box Set";
   $emailSendMessage = $_POST['msg'];
-  $to = "denisonu7@gmail.com";
+  $to = "christianaconu@gmail.com";
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8";
   $message = "<html>
@@ -610,11 +609,104 @@ if (isset($_POST['send_box'])) {
   </html>";
   if (mail($to, $subject, $message, $headers)) {
    echo "Send Sucessfully, Good Luck Email sent";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php?success=1");
    exit();
   }else{
    echo "sorry, Failed to send email. Please try again later";
-   header("Location: gift_registry.html");
+   header("Location: gift_registry.php");
+   exit();
+  }
+}
+
+if (isset($_POST['send_vacuum'])) {
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $subject = $_POST['subject'];
+  $gift = "Vacuum Cleaner";
+  $emailSendMessage = $_POST['msg'];
+  $to = "christianaconu@gmail.com";
+  $headers = "MIME-Version: 1.0" . "\r\n";
+  $headers .= "Content-type:text/html;charset=UTF-8";
+  $message = "<html>
+  <head>
+  	<title>Mail</title>
+  </head>
+  <body>
+  	<h1> Fullname of Sponsor: " . $name . "</h1>
+  	<h2> Email of Sponsor: " . $email . "</h2>
+  	<h2> Selected Gift: " . $gift . "</h2>
+    <h4>Message to the couple: ".$emailSendMessage."</h4>
+  </body>
+  </html>";
+  if (mail($to, $subject, $message, $headers)) {
+   echo "Send Sucessfully, Good Luck Email sent";
+   header("Location: gift_registry.php?success=1");
+   exit();
+  }else{
+   echo "sorry, Failed to send email. Please try again later";
+   header("Location: gift_registry.php");
+   exit();
+  }
+}
+
+if (isset($_POST['send_ove'])) {
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $subject = $_POST['subject'];
+  $gift = "Oven 600by600";
+  $emailSendMessage = $_POST['msg'];
+  $to = "christianaconu@gmail.com";
+  $headers = "MIME-Version: 1.0" . "\r\n";
+  $headers .= "Content-type:text/html;charset=UTF-8";
+  $message = "<html>
+  <head>
+  	<title>Mail</title>
+  </head>
+  <body>
+  	<h1> Fullname of Sponsor: " . $name . "</h1>
+  	<h2> Email of Sponsor: " . $email . "</h2>
+  	<h2> Selected Gift: " . $gift . "</h2>
+    <h4>Message to the couple: ".$emailSendMessage."</h4>
+  </body>
+  </html>";
+  if (mail($to, $subject, $message, $headers)) {
+   echo "Send Sucessfully, Good Luck Email sent";
+   header("Location: gift_registry.php?success=1");
+   exit();
+  }else{
+   echo "sorry, Failed to send email. Please try again later";
+   header("Location: gift_registry.php");
+   exit();
+  }
+}
+
+if (isset($_POST['send_nutri'])) {
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $subject = $_POST['subject'];
+  $gift = "Nutribullet";
+  $emailSendMessage = $_POST['msg'];
+  $to = "christianaconu@gmail.com";
+  $headers = "MIME-Version: 1.0" . "\r\n";
+  $headers .= "Content-type:text/html;charset=UTF-8";
+  $message = "<html>
+  <head>
+  	<title>Mail</title>
+  </head>
+  <body>
+  	<h1> Fullname of Sponsor: " . $name . "</h1>
+  	<h2> Email of Sponsor: " . $email . "</h2>
+  	<h2> Selected Gift: " . $gift . "</h2>
+    <h4>Message to the couple: ".$emailSendMessage."</h4>
+  </body>
+  </html>";
+  if (mail($to, $subject, $message, $headers)) {
+   echo "Send Sucessfully, Good Luck Email sent";
+   header("Location: gift_registry.php?success=1");
+   exit();
+  }else{
+   echo "sorry, Failed to send email. Please try again later";
+   header("Location: gift_registry.php");
    exit();
   }
 }
